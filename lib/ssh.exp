@@ -142,7 +142,7 @@ proc ssh_exec { boardname program pargs inp outp } {
 	set ssh_user ""
     }
 
-    if {[board_info $boardname exists ssh_useropts]} {
+    if {[board_info $boardname exists ssh_opts]} {
 	append ssh_useropts " [board_info $boardname ssh_opts]"
     }
 
